@@ -49,6 +49,13 @@ Note - you can pass any sort of block you want into the helper. If you use a blo
 ```ruby
   @events_by_date = @all_events.group_by(&:activity_on)
 ```
+
+But really you can do anything you want in there. There are no required models or methods - the gem will pass the date of each day on the calendar into the block and you just need to be able to generate html for the contents based on the date.
+
+```haml
+  = bootstrap_calendar month do |date| 
+    / Do whatever you want here!
+```
 ## Contributing
 
 1. Fork it
