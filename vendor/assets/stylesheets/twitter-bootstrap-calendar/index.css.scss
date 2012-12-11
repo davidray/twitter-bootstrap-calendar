@@ -1,0 +1,265 @@
+.calendar_grid {
+  border: 1px solid gray;
+  margin-bottom: 30px;
+  .month_header {
+    background-color: gray;
+    .span1 {
+      padding-top: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .notmonth {
+    background-color: darken(#ededed, 5%);
+  }
+  .notmonth, .notmonth a { color: white; }
+  .month.today { 
+    background-color: #D7F2FF; 
+  }
+  .month {
+    a {
+      color: gray;
+    }
+    background-color: #ededed;
+    border: 1px solid whitesmoke;
+  }
+  .week .span1 {
+    padding: 2px;
+    // height: 100px;
+    ul.event_summary {
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 2px;
+           -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+                border-radius:4px;
+      }
+    }
+  }
+  /*!
+   * Bootstrap v2.2.1
+   *
+   * Copyright 2012 Twitter, Inc
+   * Licensed under the Apache License v2.0
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Designed and built with all the love in the world @twitter by @mdo and @fat.
+   */
+  .clearfix {
+    *zoom: 1;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  .input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .row {
+    margin-left: -1px;
+    *zoom: 1;
+  }
+  .row:before,
+  .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row:after {
+    clear: both;
+  }
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 1px;
+  }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 958px;
+  }
+  .span7 {
+    width: 958px;
+  }
+  .span6 {
+    width: 821px;
+  }
+  .span5 {
+    width: 684px;
+  }
+  .span4 {
+    width: 547px;
+  }
+  .span3 {
+    width: 410px;
+  }
+  .span2 {
+    width: 273px;
+  }
+  .span1 {
+    width: 136px;
+  }
+  .offset7 {
+    margin-left: 960px;
+  }
+  .offset6 {
+    margin-left: 823px;
+  }
+  .offset5 {
+    margin-left: 686px;
+  }
+  .offset4 {
+    margin-left: 549px;
+  }
+  .offset3 {
+    margin-left: 412px;
+  }
+  .offset2 {
+    margin-left: 275px;
+  }
+  .offset1 {
+    margin-left: 138px;
+  }
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row-fluid:after {
+    clear: both;
+  }
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 0.10438413361169101%;
+    *margin-left: 0.052192066805845504%;
+  }
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0.10438413361169101%;
+  }
+  .row-fluid .span7 {
+    width: 100%;
+    *width: 99.94780793319416%;
+  }
+  .row-fluid .span6 {
+    width: 85.69937369519833%;
+    *width: 85.64718162839249%;
+  }
+  .row-fluid .span5 {
+    width: 71.39874739039666%;
+    *width: 71.34655532359082%;
+  }
+  .row-fluid .span4 {
+    width: 57.09812108559499%;
+    *width: 57.045929018789145%;
+  }
+  .row-fluid .span3 {
+    width: 42.79749478079332%;
+    *width: 42.74530271398748%;
+  }
+  .row-fluid .span2 {
+    width: 28.49686847599165%;
+    *width: 28.444676409185806%;
+  }
+  .row-fluid .span1 {
+    width: 14.19624217118998%;
+    *width: 14.144050104384133%;
+  }
+  .row-fluid .offset7 {
+    margin-left: 100.20876826722338%;
+    *margin-left: 100.10438413361169%;
+  }
+  .row-fluid .offset7:first-child {
+    margin-left: 100.10438413361169%;
+    *margin-left: 100%;
+  }
+  .row-fluid .offset6 {
+    margin-left: 85.90814196242171%;
+    *margin-left: 85.80375782881002%;
+  }
+  .row-fluid .offset6:first-child {
+    margin-left: 85.80375782881002%;
+    *margin-left: 85.69937369519833%;
+  }
+  .row-fluid .offset5 {
+    margin-left: 71.60751565762004%;
+    *margin-left: 71.50313152400835%;
+  }
+  .row-fluid .offset5:first-child {
+    margin-left: 71.50313152400835%;
+    *margin-left: 71.39874739039666%;
+  }
+  .row-fluid .offset4 {
+    margin-left: 57.306889352818374%;
+    *margin-left: 57.202505219206685%;
+  }
+  .row-fluid .offset4:first-child {
+    margin-left: 57.20250521920668%;
+    *margin-left: 57.09812108559499%;
+  }
+  .row-fluid .offset3 {
+    margin-left: 43.006263048016706%;
+    *margin-left: 42.90187891440502%;
+  }
+  .row-fluid .offset3:first-child {
+    margin-left: 42.90187891440501%;
+    *margin-left: 42.79749478079332%;
+  }
+  .row-fluid .offset2 {
+    margin-left: 28.70563674321503%;
+    *margin-left: 28.601252609603343%;
+  }
+  .row-fluid .offset2:first-child {
+    margin-left: 28.601252609603343%;
+    *margin-left: 28.496868475991654%;
+  }
+  .row-fluid .offset1 {
+    margin-left: 14.405010438413361%;
+    *margin-left: 14.30062630480167%;
+  }
+  .row-fluid .offset1:first-child {
+    margin-left: 14.30062630480167%;
+    *margin-left: 14.196242171189978%;
+  }
+  [class*="span"].hide,
+  .row-fluid [class*="span"].hide {
+    display: none;
+  }
+  [class*="span"].pull-right,
+  .row-fluid [class*="span"].pull-right {
+    float: right;
+  }
+
+}

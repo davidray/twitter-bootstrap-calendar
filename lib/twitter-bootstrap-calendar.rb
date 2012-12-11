@@ -1,9 +1,9 @@
-require "twitter-bootstrap-calendar/version"
-
 module Twitter
   module Bootstrap
-    module Calendar
-      # Your code goes here...
-    end
-  end
+      module Calendar
+        require 'twitter/bootstrap/calendar/engine' if defined?(Rails)
+      end
+   end
 end
+
+require 'twitter/bootstrap/calendar/bootstrap' if defined?(Rails)
