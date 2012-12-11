@@ -44,6 +44,11 @@ To create a calendar in your view, just call the helper method and pass in a blo
             = link_to "#{event.title}: #{event.activity_at.to_s(:time_only)}", menu_plan_event_path(event), :remote => true, :style => event_link_style(event)
 ```
 
+Note - you can pass any sort of block you want into the helper. If you use a block like mine, you will need to group the events by date, like so:
+
+```ruby
+  @events_by_date = @all_events.group_by(&:activity_on)
+```
 ## Contributing
 
 1. Fork it
