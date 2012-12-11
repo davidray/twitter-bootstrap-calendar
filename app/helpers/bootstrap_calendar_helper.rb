@@ -49,16 +49,4 @@ module BootstrapCalendarHelper
       (first..last).to_a.in_groups_of(7)
     end
   end
-
-  def event_style(event)
-    "background-color: #{event.color};"
-  end
-
-  def event_link_style(event)
-    if %w(white silver yellow lime aqua teal fuchsia).include?(event.color) 
-      "color: black;" 
-    else 
-      "color: white;"
-    end
-  end
 end
