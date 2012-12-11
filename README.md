@@ -1,4 +1,6 @@
 # Twitter::Bootstrap::Calendar
+!(https://github.com/davidray/twitter-bootstrap-calendar/calendarsample.png)
+
 
 I recently upgraded TroopTrack from Twitter Bootstrap 1 to 2, redesigning a few key aspects of the site to make it more usable. Overall, I was very pleased with the results except for one area – the calendar. I was using a calendar gem that provided a view helper that generates a table based calendar. It’s worked okay in the past, but now that I had managed to get every other aspect of my site scaling nicely for display on tablets, the horizontal scrolling caused by the rigid table layout was more than I could bear.
 
