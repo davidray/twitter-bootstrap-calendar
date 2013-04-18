@@ -5,6 +5,7 @@ module BootstrapCalendarHelper
 
   BootstrapCalendar = Struct.new(:view, :date, :callback) do
     HEADER = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
+    MOBILE_HEADER = %w[Sun Mon Tues Wed Thur Fri Sat]
     START_DAY = :sunday
 
     delegate :content_tag, to: :view
@@ -17,9 +18,14 @@ module BootstrapCalendarHelper
 
     def header
       content_tag 'div', class: 'month_header row-fluid' do
-        HEADER.map { |day| content_tag :div, class: 'span1' do
+        standard = HEADER.map { |day| content_tag :div, class: 'span1 visible-desktop' do
           day
         end }.join.html_safe
+        mobile = MOBILE_HEADER.map { |day| content_tag :div, class: 'span1 hidden-desktop', style: 'width: 14.1%' do
+          day
+        end }.join.html_safe
+
+        standard + mobile
       end
     end
 
