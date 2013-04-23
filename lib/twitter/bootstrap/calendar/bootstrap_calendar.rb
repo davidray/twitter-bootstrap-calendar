@@ -31,20 +31,28 @@ module Twitter
           end
         end
 
-        def day_names(header)
-          return DAY_NAMES if start_day.to_s == DAY_NAMES[0].downcase
-          idx = DAY_NAMES.index {|n| n.downcase == start_day.to_s} || 0
-          DAY_NAMES[idx, DAY_NAMES.size - idx] + DAY_NAMES[0, idx]
+        def start_day_index
+          @start_day_index ||= DAY_NAMES.index {|n| n.downcase == start_day.to_s} || 0
+        end
+
+        def day_names
+          return DAY_NAMES if start_day_index.zero?
+          DAY_NAMES[start_day_index, DAY_NAMES.size - start_day_index] + DAY_NAMES[0, start_day_index]
+        end
+
+        def mobile_day_names
+          return MOBILE_DAY_NAMES if start_day_index.zero?
+          MOBILE_DAY_NAMES[start_day_index, MOBILE_DAY_NAMES.size - start_day_index] + MOBILE_DAY_NAMES[0, start_day_index]
         end
 
         def header
           content_tag 'div', class: 'month_header row-fluid' do
-            standard = day_names(DAY_NAMES).map { |day|
+            standard = day_names.map { |day|
               content_tag :div, class: 'span1 visible-desktop' do
                 day
               end
             }.join.html_safe
-            mobile = day_names(MOBILE_DAY_NAMES).map { |day|
+            mobile = mobile_day_names.map { |day|
               content_tag :div, class: 'span1 hidden-desktop', style: 'width: 14.1%' do
                 day
               end
