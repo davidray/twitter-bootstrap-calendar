@@ -17,25 +17,10 @@
     background-color: #D7F2FF; 
   }
   .month {
-    a {
-      color: gray;
-    }
-    background-color: #ededed;
-    border: 1px solid whitesmoke;
+
   }
   .week .span1 {
     padding: 2px;
-    // height: 100px;
-    ul.event_summary {
-      margin: 0;
-      li {
-        list-style: none;
-        padding: 2px;
-           -moz-border-radius:4px;
-        -webkit-border-radius:4px;
-                border-radius:4px;
-      }
-    }
   }
   /*!
    * Bootstrap v2.2.1
