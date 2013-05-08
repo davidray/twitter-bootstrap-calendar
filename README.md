@@ -57,6 +57,12 @@ But really you can do anything you want in there. There are no required models o
     / Do whatever you want here!
 ```
 
+Now you can also send in options
+```haml
+  = bootstrap_calendar month, start_day: :monday do |date|
+    / Do whatever you want here!
+```
+
 Here's a sample app if you need to see this in action, thanks to Jeff Lunt.
   https://github.com/normalocity/tbc-heroku
   
