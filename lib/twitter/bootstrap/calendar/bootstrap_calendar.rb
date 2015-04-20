@@ -49,12 +49,12 @@ module Twitter
           content_tag 'div', class: 'month_header row-fluid' do
             standard = day_names.map { |day|
               content_tag :div, class: 'span1 visible-desktop' do
-                day
+                I18n.t(day.downcase)
               end
             }.join.html_safe
             mobile = mobile_day_names.map { |day|
               content_tag :div, class: 'span1 hidden-desktop', style: 'width: 14.1%' do
-                day
+                I18n.t(day.downcase)
               end
             }.join.html_safe
 
