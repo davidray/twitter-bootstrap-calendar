@@ -13,8 +13,8 @@
     background-color: darken(#ededed, 5%);
   }
   .notmonth, .notmonth a { color: white; }
-  .month.today { 
-    background-color: #D7F2FF; 
+  .month.today {
+    background-color: #D7F2FF;
   }
   .month {
     background-color: #ededed;
@@ -247,5 +247,36 @@
   .row-fluid [class*="span"].pull-right {
     float: right;
   }
+
+  // For desktops
+  .visible-phone     { display: none !important; }
+  .visible-tablet    { display: none !important; }
+  .hidden-phone      { }
+  .hidden-tablet     { }
+  .hidden-desktop    { display: none !important; }
+  .visible-desktop   { display: inherit !important; }
+
+  // Tablets & small desktops only
+  @media (min-width: 768px) and (max-width: 979px) {
+    // Hide everything else
+    .hidden-desktop    { display: inherit !important; }
+    .visible-desktop   { display: none !important ; }
+    // Show
+    .visible-tablet    { display: inherit !important; }
+    // Hide
+    .hidden-tablet     { display: none !important; }
+  }
+
+  // Phones only
+  @media (max-width: 767px) {
+    // Hide everything else
+    .hidden-desktop    { display: inherit !important; }
+    .visible-desktop   { display: none !important; }
+    // Show
+    .visible-phone     { display: inherit !important; } // Use inherit to restore previous behavior
+    // Hide
+    .hidden-phone      { display: none !important; }
+  }
+
 
 }
